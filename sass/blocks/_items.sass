@@ -1,0 +1,54 @@
+@import "../base/variables"
+@import "../base/mixins"
+.items
+    margin-top: 10px
+    &__wrapper
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__nav
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-top: 60px
+        margin-bottom: 100px
+        &-btn
+            +btn(40px, $black, 10px, 15px, inherit)
+            border: 5px solid $orange
+            transition: 0.5s all
+            margin-right: 20px
+            cursor: pointer
+            &:last-child
+                margin-right: 0
+                margin-left: 20px
+            &_active
+                background-color: $orange
+                transition: 0.5s all
+        span
+            font-size: 40px
+            font-weight: 500
+    h2
+        text-align: center
+        margin-bottom: 70px
+.item
+    margin-top: 40px
+    &__img
+        width: 251px
+        height: 251px
+    &__background
+        background-color: #EEEEEE
+        width: 367px
+        height: 367px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 10px
+    &__name
+        margin-top: 10px
+    &__price
+        font-size: 40px
+        font-weight: 500
+        margin-top: 10px
+        margin-bottom: 5px
+    &:nth-child(1), &:nth-child(2), &:nth-child(3)
+        margin-top: 10px

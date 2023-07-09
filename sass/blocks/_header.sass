@@ -1,0 +1,49 @@
+@import "../base/variables"
+.header
+    .background
+        position: absolute
+        width: calc(100vw - 30px)
+        height: 1230px
+        z-index: -2
+        &__small
+            position: absolute
+            width: calc(100vw - 20px)
+            height: 140px
+            z-index: -2
+    &__menu
+        display: flex
+        justify-content: start
+        padding-top: 35px
+        position: relative
+    &__link
+        color: $white
+        text-decoration: none
+        margin-left: 70px
+        transition: 0.5s all
+        cursor: pointer
+        &:last-child
+            margin-left: auto
+        &:first-child
+            margin-left: 0
+        &:hover
+            color: $orange
+    &__wrapper
+        display: none
+        justify-content: start
+        align-items: center
+        margin-left: auto
+        position: absolute
+        right: 0
+        top: 15px
+        #basket, #user
+            cursor: pointer
+        #user path, #basket path
+            transition: 0.5s all
+        #user:hover path
+            fill: $orange
+        #basket:hover path
+            fill: $orange
+        #user
+            margin-right: 20px
+
+

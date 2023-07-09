@@ -1,0 +1,77 @@
+@import "../base/variables"
+@import "../base/mixins"
+.help
+    position: relative
+    margin-top: 105px
+    color: $white
+    .background
+        position: absolute
+        width: calc(100vw - 30px)
+        height: 1230px
+        z-index: -2
+        right: 0
+    .container
+        position: relative
+    .gif
+        position: absolute
+        rotate: -35deg
+        top: 125px
+        left: 55px
+        z-index: -3
+    &__content
+        padding-top: 80px
+        width: 560px
+        margin-left: auto
+    p
+        margin: 40px 0
+    &__buttons
+        button
+            +btn(40px, $blueDark, 20px, 26px, $blueLight)
+            cursor: pointer
+            text-decoration: none
+            transition: 0.5s all
+            &:hover
+                background-color: inherit
+                outline: 5px solid $blueLight
+        a
+            display: inline-block
+            font-size: 40px
+            color: $blueDark
+            text-decoration: none
+            font-weight: 500
+            margin-right: 20px
+            margin-top: 20px
+            &:nth-child(2), &:nth-child(4)
+                margin-right: 0
+    .dog
+        position: absolute
+        top: 720px
+        left: 270px
+    &__screen
+        width: calc(100vw - 20px)
+        overflow: hidden
+        position: absolute
+        height: 100%
+        .round
+            position: absolute
+            &:nth-child(1)
+                width: 238px
+                height: 238px
+                left: -198px
+                bottom: 107px
+            &:nth-child(2)
+                width: 116px
+                height: 116px
+                right: -58px
+                bottom: 300px
+            &:nth-child(3)
+                height: 76px
+                width: 76px
+                right: 58px
+                bottom: 217px
+            &:nth-child(4)
+                height: 46px
+                width: 46px
+                right: 50px
+                bottom: 120px
+

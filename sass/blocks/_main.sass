@@ -1,0 +1,57 @@
+@import "../base/variables"
+@import "../base/mixins"
+.main
+    color: $white
+    .round
+        position: absolute
+    .container
+        position: relative
+        .round
+            &:nth-child(1)
+                width: 66px
+                height: 66px
+                right: 0
+                top: 718px
+            &:nth-child(2)
+                width: 112px
+                height: 112px
+                right: 209px
+                top: 858px
+            &:nth-child(3)
+                height: 224px
+                width: 224px
+                top: 789px
+                right: 534px
+    h1
+        margin-top: 60px
+        margin-bottom: 30px
+    p
+        width: 560px
+    &__img
+        position: absolute
+        top: 162px
+        right: 0
+    &__btn
+        +btn(40px, $blueDark, 20px, 26px, $blueLight)
+        margin-top: 40px
+        cursor: pointer
+        transition: 0.5s all
+        &:hover
+            background-color: inherit
+            outline: 5px solid $blueLight
+    &__screen
+        width: calc(100vw - 20px)
+        overflow: hidden
+        position: absolute
+        height: 300px
+        .round
+            width: 168px
+            height: 168px
+            right: -74px
+            top: 74px
+
+
+
+
+
+

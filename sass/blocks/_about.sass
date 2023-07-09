@@ -1,0 +1,53 @@
+@import "../base/variables"
+.about
+    position: relative
+    margin-top: 475px
+    h2
+        text-align: center
+    &__block
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 60px
+        p
+            width: 560px
+            span
+                color: $redLight
+        img
+            width: 560px
+        &-1
+            margin-top: 20px
+    &__screen
+        width: calc(100vw - 20px)
+        overflow: hidden
+        position: absolute
+        height: 100%
+        .round
+            position: absolute
+            z-index: -1
+            &:nth-child(1)
+                width: 92px
+                height: 92px
+                top: 244px
+                left: -24px
+            &:nth-child(2)
+                width: 232px
+                height: 232px
+                bottom: 33px
+                left: -162px
+            &:nth-child(3)
+                width: 112px
+                height: 112px
+                top: 498px
+                right: -36px
+            &:nth-child(4)
+                width: 70px
+                height: 70px
+                top: 712px
+                right: 51px
+            &:nth-child(5)
+                width: 50px
+                height: 50px
+                top: 881px
+                right: 26px
+
